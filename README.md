@@ -102,6 +102,7 @@ Install dependencies:
 
 ```bash
 $ npm install
+$ npm install webpack -g
 $ webpack
 $ cd server && go get ./... && cd ../
 ```
@@ -112,6 +113,10 @@ Start dev server:
 
 ```bash
 $ cd server
+$ go get github.com/jteeuwen/go-bindata
+$ cd %GOPATH%/src/github.com/jteeuwen/go-bindata/go-bindata
+$ cp go-bindata.exe %GOPATH%/src/github.com/reomi/iris-react-reomi/server/
+$ cd %GOPATH%/src/github.com/reomi/iris-react-reomi/server/
 $ go-bindata ./data/...
 $ go build
 $ server run # ./server.exe run
