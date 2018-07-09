@@ -112,9 +112,9 @@ $ cd server && go get ./... && cd ../
 Start dev server:
 
 ```bash
-$ cd server
 $ go get github.com/jteeuwen/go-bindata
 $ cd %GOPATH%/src/github.com/jteeuwen/go-bindata/go-bindata
+$ go build
 $ cp go-bindata.exe %GOPATH%/src/github.com/reomi/iris-react-reomi/server/
 $ cd %GOPATH%/src/github.com/reomi/iris-react-reomi/server/
 $ go-bindata ./data/...
